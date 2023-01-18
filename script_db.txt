@@ -1,0 +1,6 @@
+//untuk menampilkan data user khusus official
+SELECT id_official, nama_official,username, 
+	`password`, tgl_input_official, id_user,LEVEL
+	
+FROM users 
+	LEFT JOIN official AS off USING(id_official) WHERE LEVEL='Official'
